@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  
+  <title>piano・electone Early Summer Sale 2026｜6月20日(土)・21日(日)開催｜ピアノ専門店トリイ</title>
+  <meta name="description" content="滋賀県高島市今津本店で開催する「piano・electone Early Summer Sale 2026」。6月20日(土)・21日(日)の2日間限定。中古ピアノ、エレクトーン、電子ピアノの展示と松竹梅の選べる成約特典をご用意しています。">
+  
+  <!-- OGP -->
+  <meta property="og:title" content="piano・electone Early Summer Sale 2026｜ピアノ専門店トリイ">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="初夏の光に、音色がひらく。創業130年のトリイが贈る6月の特別企画。">
+  <meta property="og:url" content="https://www.toriimusic.co.jp/">
+  <meta property="og:site_name" content="ピアノ専門店トリイ">
+  <meta property="og:image" content="./image/early-summer-hero.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./image/favicon002.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;800&family=Zen+Old+Mincho:wght@400;700;900&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* === VARIABLES === */
+    :root {
+      --c-gold: #c5a059;
+      --c-gold-light: #f3e3a8;
+      --c-gold-rich: #b8860b;
+      --c-red: #b30000;
+      --c-red-dark: #8a0000;
+      --c-black: #1a1a1a;
+      --c-text: #2c2c2c;
+      --c-text-light: #666666;
+      --c-bg: #fcfaf8;
+      
+      --font-serif: 'Zen Old Mincho', serif;
+      --font-mincho: 'Shippori Mincho', serif;
+      --font-sans: 'Noto Sans JP', sans-serif;
+
+      --ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
+      --shadow-soft: 0 10px 40px -10px rgba(0,0,0,0.08);
+      --shadow-hover: 0 20px 50px -10px rgba(0,0,0,0.15);
+    }
+
+    /* === BASE === */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-sans);
+      color: var(--c-text);
+      background-color: var(--c-bg);
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c5a059' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      overflow-x: hidden;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* === UTILITIES === */
+    a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
+    img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; position: relative; }
+    
+    .fade-in-up { opacity: 0; transform: translateY(30px); transition: opacity 1s var(--ease-out), transform 1s var(--ease-out); }
+    .fade-in-up.is-visible { opacity: 1; transform: translateY(0); }
+    
+    .text-center { text-align: center; }
+
+    /* === HEADER === */
+    .header {
+      position: fixed; top: 0; left: 0; width: 100%; z-index: 999;
+      padding: 15px 0;
+      transition: background 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
+    }
+    .header.is-scrolled {
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(10px);
+      padding: 10px 0;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+    .header-inner { display: flex; justify-content: space-between; align-items: center; }
+    
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .brand-logo img { width: 40px; height: 40px; display: block; object-fit: contain; }
+    .brand-text { font-family: var(--font-serif); font-weight: 700; font-size: 1.25rem; letter-spacing: 0.05em; color: var(--c-black); }
+    
+    .header-actions { display: flex; align-items: center; gap: 15px; }
+    
+    .social-links { display: flex; gap: 10px; }
+    .social-link {
+      width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;
+      border-radius: 50%; background: rgba(0,0,0,0.05); transition: all 0.3s;
+      color: var(--c-black);
+    }
+    .social-link:hover { background: var(--c-black); color: #fff; transform: translateY(-2px); }
+    .social-link svg { width: 18px; height: 18px; fill: currentColor; }
+
+    .header-btn {
+      background: var(--c-black); color: #fff;
+      padding: 10px 24px; border-radius: 50px;
+      font-size: 0.9rem; font-weight: 500; letter-spacing: 0.05em;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .header-btn:hover { background: var(--c-red); transform: translateY(-2px); box-shadow: 0 5px 15px rgba(179,0,0,0.3); }
+
+    /* === HERO CAROUSEL === */
+    .hero {
+      height: 100vh; min-height: 700px; position: relative; overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .hero-carousel { position: absolute; inset: 0; z-index: 0; }
+    .hero-slide {
+      position: absolute; inset: 0;
+      background-size: cover; background-position: center;
+      opacity: 0;
+      animation: slideAnimation 18s infinite;
+    }
+    .hero-slide:nth-child(1) { background-image: url('./image/early-summer-hero.png'); animation-delay: 0s; }
+    .hero-slide:nth-child(2) { background-image: url('./image/★店外観002jpeg.jpg'); animation-delay: 6s; }
+    .hero-slide:nth-child(3) { background-image: url('./image/★店頭ピアノ画像002.jpg'); animation-delay: 12s; }
+
+    @keyframes slideAnimation {
+      0% { opacity: 0; transform: scale(1); }
+      5% { opacity: 1; }
+      33% { opacity: 1; }
+      38% { opacity: 0; transform: scale(1.1); }
+      100% { opacity: 0; transform: scale(1.1); }
+    }
+
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: radial-gradient(circle at center, rgba(0,0,0,0.3) 0%, rgba(20, 0, 0, 0.6) 100%);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative; z-index: 2; color: #fff; text-align: center;
+      display: flex; flex-direction: column; align-items: center; padding: 0 20px;
+    }
+    .hero-badge {
+      display: inline-block; border: 1px solid rgba(255,255,255,0.6);
+      background: rgba(255,255,255,0.15); backdrop-filter: blur(8px);
+      padding: 12px 36px; border-radius: 50px;
+      font-family: var(--font-mincho); font-size: 1rem; letter-spacing: 0.2em; margin-bottom: 2rem;
+    }
+    .hero-copy-vertical {
+      font-family: var(--font-serif); font-size: clamp(2.8rem, 7vw, 5.5rem);
+      font-weight: 700; line-height: 1.3; margin-bottom: 30px;
+      text-shadow: 0 10px 40px rgba(0,0,0,0.6);
+      background: linear-gradient(to bottom, #ffffff 20%, var(--c-gold-light) 80%, #c5a059 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      writing-mode: vertical-rl; text-orientation: upright; letter-spacing: 0.15em;
+    }
+    
+    .hero-date-box {
+      margin-top: 20px; background: rgba(0,0,0,0.6); padding: 25px 40px;
+      border: 1px solid rgba(255,255,255,0.3); border-radius: 8px;
+      backdrop-filter: blur(5px);
+    }
+    .hero-date-main {
+      font-weight: 700; letter-spacing: 0.1em; font-size: 1.6rem; font-family: var(--font-mincho);
+      border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 10px; margin-bottom: 10px;
+    }
+    .hero-schedule-list {
+      text-align: center; font-size: 1.1rem; line-height: 1.8;
+    }
+    .hero-schedule-date { color: var(--c-gold-light); font-weight: 700; }
+
+    .scroll-down {
+      position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
+      color: rgba(255,255,255,0.7); font-size: 0.75rem; letter-spacing: 0.2em;
+      z-index: 2; text-align: center;
+    }
+    .scroll-down::after {
+      content: ''; display: block; width: 1px; height: 40px;
+      background: rgba(255,255,255,0.5); margin: 10px auto 0;
+      animation: extendLine 2s infinite;
+    }
+    @keyframes extendLine { 0% { transform: scaleY(0); transform-origin: top; } 50% { transform: scaleY(1); } 100% { transform: scaleY(0); transform-origin: bottom; } }
+
+    /* === COMMON TITLES === */
+    .section-label {
+      display: inline-block; font-family: var(--font-sans); 
+      font-size: 0.75rem; letter-spacing: 0.3em; font-weight: 700;
+      color: var(--c-red); margin-bottom: 20px;
+      border-bottom: 1px solid var(--c-red); padding-bottom: 4px;
+    }
+    .section-title {
+      font-family: var(--font-serif); font-size: clamp(2rem, 4vw, 3rem); 
+      margin-bottom: 30px; line-height: 1.4; color: var(--c-black);
+    }
+
+    /* === CONCEPT === */
+    .concept { padding: 100px 0; background: white; }
+    .concept-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .concept-img-wrap {
+      position: relative; height: 450px; border-radius: 4px; box-shadow: var(--shadow-soft);
+    }
+    .concept-img-wrap::after {
+      content: ''; position: absolute; top: 20px; left: 20px; right: -20px; bottom: -20px;
+      border: 2px solid var(--c-gold); z-index: -1;
+    }
+    .section-desc { font-size: 1rem; line-height: 2.2; color: var(--c-text-light); }
+
+    /* === REASONS === */
+    .reasons { padding: 100px 0; background: #fdfdfd; }
+    .reasons-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 50px;
+    }
+    .reason-card {
+      background: white; padding: 40px 30px; border-radius: 8px;
+      text-align: center; border: 1px solid #eee;
+      box-shadow: var(--shadow-soft); transition: transform 0.3s;
+    }
+    .reason-card:hover { transform: translateY(-10px); border-color: var(--c-gold); }
+    .reason-icon {
+      width: 80px; height: 80px; margin: 0 auto 20px;
+      background: var(--c-bg); border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      color: var(--c-gold-rich); border: 1px solid var(--c-gold-light);
+    }
+    .reason-title { font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: 15px; color: var(--c-black); }
+    .reason-desc { font-size: 0.9rem; color: var(--c-text-light); line-height: 1.8; }
+
+    /* === SPECIAL OFFER (RENEWED) === */
+    .special-offer {
+      padding: 120px 0;
+      background: linear-gradient(135deg, #fffcfc 0%, #fff 100%);
+      position: relative;
+    }
+    .decoration-line {
+      position: absolute; top: 0; left: 0; width: 100%; height: 6px;
+      background: repeating-linear-gradient(90deg, var(--c-red), var(--c-red) 30px, #fff 30px, #fff 60px, var(--c-gold) 60px, var(--c-gold) 90px, #fff 90px, #fff 120px);
+    }
+    
+    .offer-header { text-align: center; margin-bottom: 60px; }
+    .offer-title-main { font-family: var(--font-serif); font-size: clamp(2.5rem, 5vw, 3.5rem); color: var(--c-red); margin-bottom: 15px; font-weight: 900; }
+    .offer-subtitle-gold {
+      font-family: var(--font-serif); font-size: 1.4rem; color: #a58135; 
+      font-weight: 700; letter-spacing: 0.1em;
+      position: relative; display: inline-block; padding-bottom: 15px;
+    }
+    .offer-subtitle-gold::after {
+      content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+      width: 60px; height: 3px; background: #a58135;
+    }
+    
+    .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+    .product-card {
+      background: #fff; position: relative;
+      transition: transform 0.4s var(--ease-out);
+      border-bottom: 4px solid var(--c-gold);
+      box-shadow: var(--shadow-soft);
+    }
+    .product-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-hover); }
+    .product-thumb { height: 260px; overflow: hidden; position: relative; }
+    .product-thumb img { transition: transform 0.8s var(--ease-out); }
+    .product-card:hover .product-thumb img { transform: scale(1.08); }
+    
+    .tag-special {
+      position: absolute; top: 0; left: 0; z-index: 2;
+      background: linear-gradient(135deg, var(--c-red), var(--c-red-dark)); color: white;
+      padding: 8px 20px; font-size: 0.85rem; letter-spacing: 0.1em; font-weight: 700;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    
+    .product-body { padding: 30px; text-align: center; }
+    .product-title { font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 8px; font-weight: 700; }
+    .product-meta { color: #888; font-size: 0.9rem; margin-bottom: 15px; display: block; }
+    
+    .product-price-box {
+      margin: 20px 0 25px; padding: 15px 0;
+      border-top: 1px dashed #ddd; border-bottom: 1px dashed #ddd;
+    }
+    .price-label { display: block; font-size: 0.8rem; color: var(--c-red); font-weight: 700; margin-bottom: 5px; }
+    .price-value { font-family: var(--font-serif); font-size: 2rem; color: var(--c-black); font-weight: 700; line-height: 1; }
+    .price-unit { font-size: 1rem; font-weight: normal; margin-left: 2px; }
+    
+    .btn-arrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      color: var(--c-red); font-weight: 700; letter-spacing: 0.05em; font-size: 0.95rem;
+      transition: all 0.3s;
+    }
+    .btn-arrow:hover { color: var(--c-red-dark); }
+    .btn-arrow svg { transition: transform 0.3s ease; }
+    .btn-arrow:hover svg { transform: translateX(6px); }
+
+    /* === BENEFITS === */
+    .benefits {
+      padding: 100px 0;
+      background-color: #fdfcf8;
+      background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20z' fill='%23d4af37' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+    }
+    .sho-chiku-bai {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 60px;
+    }
+    .rank-card {
+      background: #fff; padding: 0;
+      border: 1px solid #e0e0e0;
+      position: relative; overflow: hidden; text-align: center;
+      transition: all 0.4s ease;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      border-radius: 8px;
+    }
+    .rank-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(197, 160, 89, 0.2); }
+    
+    .rank-card-header {
+      padding: 20px 0;
+      color: white;
+      position: relative;
+    }
+    .rank-card-header::after {
+      content: ''; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%);
+      width: 0; height: 0;
+      border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid;
+    }
+    .rank-card.matsu { border-top: 5px solid #b8860b; }
+    .rank-card.matsu .rank-card-header { background: linear-gradient(135deg, #b8860b, #e6c67e); border-top-color: #b8860b; }
+    .rank-card.take { border-top: 5px solid #d90000; }
+    .rank-card.take .rank-card-header { background: linear-gradient(135deg, #d90000, #ff6b6b); border-top-color: #d90000; }
+    .rank-card.ume { border-top: 5px solid #d81b60; }
+    .rank-card.ume .rank-card-header { background: linear-gradient(135deg, #d81b60, #f48fb1); border-top-color: #d81b60; }
+
+    .rank-icon-img {
+      width: 60px; height: 60px; line-height: 60px;
+      background: #fff; border-radius: 50%;
+      margin: 0 auto 10px;
+      font-family: var(--font-serif); font-size: 1.8rem; font-weight: 900;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .rank-card.matsu .rank-icon-img { color: #b8860b; border: 2px solid #b8860b; }
+    .rank-card.take .rank-icon-img { color: #d90000; border: 2px solid #d90000; }
+    .rank-card.ume .rank-icon-img { color: #d81b60; border: 2px solid #d81b60; }
+
+    .rank-price-condition {
+      background: #fafafa; padding: 10px; margin: 20px 20px 0;
+      border-radius: 4px; font-weight: 700; color: var(--c-black); font-size: 0.9rem;
+      border: 1px dashed #ccc;
+    }
+
+    .rank-body { padding: 20px 25px 40px; }
+    .rank-items-list { list-style: none; text-align: left; margin-top: 15px; }
+    .rank-items-list li {
+      padding: 12px 0; border-bottom: 1px dotted #ccc; font-weight: 500; font-size: 0.95rem;
+      display: flex; align-items: center;
+    }
+    .rank-items-list li::before {
+      content: '✿'; color: var(--c-gold); margin-right: 8px; font-size: 0.8rem;
+    }
+
+    /* === GACHA === */
+    .gacha-section {
+      background-color: #fffcf4;
+      padding: 100px 0;
+      border-top: 4px solid var(--c-red);
+      border-bottom: 4px solid var(--c-gold);
+      text-align: center;
+    }
+    .gacha-title-big {
+      font-size: 4.5rem; font-weight: 900;
+      background: linear-gradient(to bottom, #ffd700, #b8860b, #8b4500);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      display: block; margin-top: 5px; letter-spacing: 0.05em;
+    }
+    .gacha-machine-container { position: relative; width: 240px; margin: 40px auto; }
+    .machine-body {
+      width: 240px; position: relative;
+      animation: float 6s ease-in-out infinite;
+    }
+    @keyframes float { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-10px);} }
+    .machine-dome {
+      width: 200px; height: 200px; margin: 0 auto;
+      background: rgba(255,255,255,0.4);
+      border: 4px solid rgba(255,255,255,0.8); border-radius: 50%;
+      position: relative; z-index: 2; overflow: hidden;
+    }
+    .capsule { width: 40px; height: 40px; border-radius: 50%; position: absolute; border: 2px solid rgba(0,0,0,0.1); }
+    .c1 { background: #ffeb3b; top: 60%; left: 20%; }
+    .c2 { background: #d90000; top: 40%; left: 50%; }
+    .c3 { background: #4fc3f7; top: 70%; left: 60%; }
+    .machine-base {
+      width: 240px; height: 240px; background: var(--c-red);
+      border-radius: 20px 20px 40px 40px; margin-top: -80px; padding-top: 90px;
+      position: relative; z-index: 1;
+    }
+    .machine-dial { width: 60px; height: 60px; background: #fff; border-radius: 50%; margin: 0 auto; border: 4px solid #eee; }
+    .prize-item {
+      display: flex; align-items: center; gap: 20px;
+      background: #fff; padding: 15px 25px; border-radius: 50px;
+      margin: 10px auto; max-width: 400px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+    .prize-ball { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #fff; }
+    .gold-ball { background: #ffd700; color: #000; }
+    .silver-ball { background: #c0c0c0; color: #000; }
+    .bronze-ball { background: #cd7f32; }
+
+    /* === WISDOM LIBRARY (ORIGINAL RESTORED) === */
+    .wisdom-library-area { padding: 100px 0; background-color: var(--c-bg); text-align: center; }
+    .wisdom-header { margin-bottom: 60px; }
+    .wisdom-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-bottom: 60px; }
+    .wisdom-card { background: #fff; padding: 40px 25px; border: 1px solid #eee; border-radius: 4px; transition: 0.4s var(--ease-out); box-shadow: 0 5px 15px rgba(0,0,0,0.02); }
+    .wisdom-card:hover { transform: translateY(-10px); border-color: var(--c-gold); box-shadow: 0 15px 35px rgba(197, 160, 89, 0.15); }
+    .wisdom-tag { font-family: var(--font-serif); font-size: 0.8rem; color: var(--c-gold-rich); border: 1px solid var(--c-gold-light); padding: 2px 15px; margin-bottom: 20px; letter-spacing: 0.1em; background: #fff; display: inline-block; }
+    .wisdom-card h4 { font-family: var(--font-serif); font-size: 1.2rem; color: var(--c-black); margin-bottom: 15px; line-height: 1.5; }
+    .wisdom-card p { font-size: 0.9rem; color: var(--c-text-light); line-height: 1.7; }
+
+    .line-invite-container {
+        max-width: 900px; margin: 40px auto 0; background: #fff;
+        border: 2px solid var(--c-gold-light); padding: 60px 40px;
+        position: relative; border-radius: 8px; box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    }
+    .line-invite-container::before { content: ""; position: absolute; inset: 12px; border: 1px solid rgba(197, 160, 89, 0.3); pointer-events: none; }
+    .line-invite-label { display: inline-block; background: var(--c-red); color: #fff; padding: 6px 25px; font-size: 0.9rem; font-weight: 700; margin-bottom: 30px; border-radius: 4px; }
+    .line-invite-title { font-family: var(--font-serif); font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.4; color: var(--c-black); margin-bottom: 25px; }
+    .line-invite-title span { color: var(--c-gold-rich); text-decoration: underline; text-underline-offset: 10px; }
+    .line-invite-text { font-size: 1.1rem; color: #555; margin-bottom: 45px; }
+
+    .line-btn-wrapper { display: flex; justify-content: center; }
+    .ultimate-line-btn {
+        display: flex !important; align-items: center !important; justify-content: center !important; gap: 15px !important;
+        background-color: #06C755 !important; color: #ffffff !important; padding: 24px 60px !important;
+        border-radius: 100px !important; font-size: clamp(1.1rem, 2.5vw, 1.6rem) !important;
+        font-weight: 800 !important; text-decoration: none !important;
+        box-shadow: 0 12px 30px rgba(6, 199, 85, 0.4) !important; transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+        border: none !important; cursor: pointer !important;
+    }
+    .ultimate-line-btn:hover { background-color: #05b34c !important; transform: translateY(-5px) scale(1.03) !important; box-shadow: 0 15px 40px rgba(6, 199, 85, 0.5) !important; }
+    .line-logo-svg { width: 35px !important; height: 35px !important; }
+
+    /* === DETAILED LIST === */
+    .detail-list { padding: 80px 0; background: #fff; }
+    .tabs { display: flex; justify-content: center; margin-bottom: 40px; border-bottom: 1px solid #ddd; }
+    .tab { padding: 15px 40px; font-size: 1.1rem; cursor: pointer; font-family: var(--font-serif); color: #888; border-bottom: 3px solid transparent; transition: all 0.3s; }
+    .tab.active { color: var(--c-red); border-bottom-color: var(--c-red); font-weight: 700; }
+    .tab-content { display: none; animation: fadeIn 0.5s; }
+    .tab-content.active { display: block; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+    .piano-table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 0.95rem; }
+    .piano-table th { background: var(--c-bg); color: var(--c-black); font-weight: 700; padding: 15px; text-align: left; border-bottom: 2px solid var(--c-gold); font-family: var(--font-serif); }
+    .piano-table td { padding: 15px; border-bottom: 1px solid #eee; vertical-align: middle; }
+    .piano-table a { color: var(--c-red); text-decoration: underline; }
+    .stock-badge { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; color: #fff; margin-right: 5px; font-weight: bold; }
+    .bg-red { background: var(--c-red); }
+    .bg-gold { background: var(--c-gold-rich); }
+
+    /* === STAFF === */
+    .staff-section { padding: 100px 0; background: #fff; }
+    .staff-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 50px; }
+    .staff-card { text-align: center; }
+    .staff-img { width: 140px; height: 140px; border-radius: 50%; margin: 0 auto 20px; border: 3px solid var(--c-gold); padding: 4px; object-fit: cover; }
+    .staff-role { font-size: 0.8rem; color: var(--c-red); letter-spacing: 0.1em; font-weight: 700; margin-bottom: 5px; }
+    .staff-name { font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: 15px; font-weight: 700; }
+    .staff-msg { font-size: 0.9rem; color: var(--c-text-light); line-height: 1.8; text-align: left; }
+
+    /* === ACCESS === */
+    .access-grid { display: grid; grid-template-columns: 1fr 1fr; background: #fff; box-shadow: var(--shadow-soft); }
+    .access-info { padding: 60px; }
+    .access-map { min-height: 450px; }
+
+    /* === STICKY BAR === */
+    .sticky-bar {
+      position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+      width: 92%; max-width: 480px; background: rgba(26, 26, 26, 0.92);
+      backdrop-filter: blur(12px); padding: 10px 15px; border-radius: 100px;
+      display: flex; justify-content: space-between; align-items: center; z-index: 999;
+    }
+    .sticky-item { flex: 1; text-align: center; color: #fff; font-size: 0.75rem; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+    .sticky-cta { flex: 1.8; background: var(--c-red); color: #fff; padding: 14px 0; border-radius: 50px; font-weight: 700; margin: 0 12px; font-size: 0.9rem; text-align: center; }
+
+    footer { background: var(--c-black); color: #888; padding: 60px 0 140px; text-align: center; font-size: 0.85rem; }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .hero-copy-vertical { writing-mode: horizontal-tb; height: auto; margin-top: -50px; }
+      .concept-inner, .sho-chiku-bai, .staff-grid, .reasons-grid, .access-grid, .wisdom-grid { grid-template-columns: 1fr; gap: 40px; }
+      .piano-table { font-size: 0.8rem; }
+    }
+    /* === LINE COUPON SECTION === */
+    .line-coupon {
+      padding: 80px 0 40px;
+      background: #fff;
+    }
+    .coupon-card {
+      background: #fff;
+      border: 2px solid var(--c-red);
+      border-radius: 12px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      box-shadow: 0 15px 40px rgba(179,0,0,0.1);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    /* チケットの切り込み演出 */
+    .coupon-card::before, .coupon-card::after {
+      content: ''; position: absolute; top: 50%; width: 40px; height: 40px;
+      background: #fff; border: 2px solid var(--c-red); border-radius: 50%;
+      z-index: 2;
+    }
+    .coupon-card::before { left: -22px; transform: translateY(-50%); }
+    .coupon-card::after { right: -22px; transform: translateY(-50%); }
+
+    .coupon-badge {
+      background: var(--c-red); color: #fff; padding: 5px 20px;
+      font-weight: 700; font-size: 0.9rem; border-radius: 50px; margin-bottom: 20px;
+    }
+    .coupon-main-title {
+      font-family: var(--font-serif); font-size: clamp(1.5rem, 4vw, 2.2rem);
+      color: var(--c-black); text-align: center; line-height: 1.4; margin-bottom: 15px;
+    }
+    .coupon-amount {
+      display: flex; align-items: baseline; gap: 5px; color: var(--c-red);
+      font-family: var(--font-serif); margin-bottom: 20px;
+    }
+    .coupon-amount .price { font-size: clamp(3rem, 8vw, 5rem); font-weight: 900; line-height: 1; }
+    .coupon-amount .unit { font-size: 1.5rem; font-weight: 700; }
+    
+    .coupon-instruction {
+      background: #fff4f4; border: 1px dashed var(--c-red);
+      padding: 15px 30px; border-radius: 8px; margin-bottom: 30px;
+      text-align: center; color: var(--c-red); font-weight: 700;
+    }
+    .coupon-instruction span { display: block; font-size: 0.8rem; margin-bottom: 5px; opacity: 0.8; }
+
+    @media (max-width: 600px) {
+      .coupon-card::before, .coupon-card::after { display: none; }
+      .coupon-instruction { padding: 15px; font-size: 0.9rem; }
+    }
+  </style>
+
+  <!-- Google Tag Manager (保持) -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MSD7G7FP');</script>
+</head>
+<body>
+
+  <!--
+    6月セール仮LPです。
+    商品情報・価格・商品リンク・商品画像は3月LPからの仮流用です。
+    正式公開前に、6月の商品リスト・売約状況・価格・リンクを必ず確認してください。
+  -->
+
+  <!-- ヘッダー -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-logo"><img src="./image/favicon.png" alt="トリイロゴ"></div>
+        <span class="brand-text">トリイ</span>
+      </div>
+      <div class="header-actions">
+        <a href="#contact" class="header-btn"><span>ご来場予約</span></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-carousel">
+      <div class="hero-slide"></div><div class="hero-slide"></div><div class="hero-slide"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content fade-in-up">
+      <span class="hero-badge">EARLY SUMMER SALE 2026</span>
+      <h1 class="hero-copy-vertical">初夏の光に、<br>音色がひらく。</h1>
+      <div class="hero-date-box">
+        <div class="hero-date-main">6月20日(土)・21日(日)</div>
+        <div class="hero-schedule-list"><span class="hero-schedule-date">piano・electone Early Summer Sale 開催</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONCEPT -->
+  <section class="concept">
+    <div class="container concept-inner">
+      <div class="concept-text fade-in-up">
+        <span class="section-label">CONCEPT</span>
+        <h2 class="section-title">初夏の光に出会う<br>一台を、あなたに。</h2>
+        <p class="section-desc">
+          初夏の光が差し込む季節。ご家庭に本物の音色を迎えるには、ちょうどよいタイミングです。<br>
+          創業130年のトリイでは、長く安心して弾いていただけるピアノ・エレクトーンを、専門スタッフが一台ずつ丁寧にご案内します。
+        </p>
+      </div>
+      <div class="concept-img-wrap fade-in-up"><img src="image/0011.jpg" alt="ピアノ"></div>
+    </div>
+  </section>
+  <!-- LINE COUPON CTA -->
+  <section class="line-coupon">
+    <div class="container fade-in-up">
+      <div class="coupon-card">
+        <span class="coupon-badge">6/20・21 Early Summer Sale限定特典</span>
+        <h2 class="coupon-main-title">公式LINE登録で、セール期間中に使える<br>特別割引クーポンをプレゼント</h2>
+        
+        <div class="coupon-amount">
+          <span class="unit">最大</span>
+          <span class="price">10,000</span>
+          <span class="unit">円OFF</span>
+        </div>
+
+        <div class="coupon-instruction">
+          <span>＼ 獲得はかんたん2ステップ ／</span>
+          友だち登録後、トーク画面で「クーポン」と送信してください。
+        </div>
+
+        <div class="line-btn-wrapper">
+          <a href="https://lin.ee/Hm79p0k" class="ultimate-line-btn" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="LINE" class="line-logo-svg">
+            <span class="btn-main-text">今すぐクーポンを受け取る</span>
+          </a>
+        </div>
+        
+        <p style="font-size: 0.75rem; color: #888; margin-top: 20px;">※本クーポンは6月20日・21日の開催期間中、会場でのご成約時にご利用いただけます。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REASONS -->
+  <section class="reasons">
+    <div class="container fade-in-up">
+      <div class="text-center">
+        <span class="section-label">OUR PRIDE</span>
+        <h2 class="section-title">トリイが選ばれる<br>３つの理由</h2>
+      </div>
+      <div class="reasons-grid">
+        <div class="reason-card">
+          <div class="reason-icon">✿</div>
+          <h3 class="reason-title">創業130年の信頼</h3>
+          <p class="reason-desc">明治27年創業。地域に根ざした長年の実績と、安心のアフターサポートをお約束します。</p>
+        </div>
+        <div class="reason-card">
+          <div class="reason-icon">✿</div>
+          <h3 class="reason-title">豊富な品揃え</h3>
+          <p class="reason-desc">県内最大級の展示数。約30台のピアノを常時展示し、最適な一台をご提案します。</p>
+        </div>
+        <div class="reason-card">
+          <div class="reason-icon">✿</div>
+          <h3 class="reason-title">無料試弾＆プロ相談</h3>
+          <p class="reason-desc">納得いくまで試弾OK。経験豊富な専門スタッフと技術者が、丁寧にご案内します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIAL OFFER -->
+  <section class="special-offer" id="special">
+    <div class="decoration-line"></div>
+    <div class="container">
+      <div class="offer-header fade-in-up">
+        <h2 class="offer-title-main">初夏の展示ラインナップ</h2>
+        <p class="offer-subtitle-gold">正式商品確定までは3月セール掲載商品を仮掲載しています</p>
+        <p style="margin-top:18px;color:#8a0000;font-weight:700;">※掲載商品・価格・リンクは仮情報です。正式な6月展示リスト確定後に差し替えてください。</p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card fade-in-up">
+          <span class="tag-special">仮掲載</span>
+          <div class="product-thumb"><img src="image/u3m.jpg" alt="U3M"></div>
+          <div class="product-body">
+            <h3 class="product-title">YAMAHA U3M</h3>
+            <div class="product-price-box">
+              <span class="price-label">仮掲載価格</span>
+              <span class="price-value">385,000<span class="price-unit">円(税込)</span></span>
+            </div>
+            <a href="https://www.toriimusic.co.jp/10937/" class="btn-arrow">在庫を確認する</a>
+          </div>
+        </div>
+        <div class="product-card fade-in-up">
+          <span class="tag-special">仮掲載</span>
+          <div class="product-thumb"><img src="image/u3h.jpg" alt="U3H"></div>
+          <div class="product-body">
+            <h3 class="product-title">YAMAHA U3H</h3>
+            <div class="product-price-box">
+              <span class="price-label">仮掲載価格</span>
+              <span class="price-value">363,000<span class="price-unit">円(税込)</span></span>
+            </div>
+            <a href="https://www.toriimusic.co.jp/20528/" class="btn-arrow">在庫を確認する</a>
+          </div>
+        </div>
+        <div class="product-card fade-in-up">
+          <span class="tag-special">仮掲載</span>
+          <div class="product-thumb"><img src="image/u1h.jpg" alt="U1H"></div>
+          <div class="product-body">
+            <h3 class="product-title">YAMAHA U1H</h3>
+            <div class="product-price-box">
+              <span class="price-label">仮掲載価格</span>
+              <span class="price-value">319,000<span class="price-unit">円(税込)</span></span>
+            </div>
+            <a href="https://www.toriimusic.co.jp/16526/" class="btn-arrow">在庫を確認する</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="benefits">
+    <div class="container">
+      <div class="text-center fade-in-up">
+        <span class="section-label">PREMIUM BENEFITS</span>
+        <h2 class="section-title">Early Summer プレミアム特典</h2>
+        <p style="color:#888; margin-bottom:40px;">※中古ピアノ（税別）のご購入価格に応じた特典です</p>
+      </div>
+      <div class="sho-chiku-bai">
+        <div class="rank-card matsu fade-in-up">
+          <div class="rank-card-header"><div class="rank-icon-img">松</div><h3>最高級の安心</h3></div>
+          <div class="rank-price-condition">税別 30万円以上</div>
+          <div class="rank-body">
+            <ul class="rank-items-list">
+              <li>納品据え付け料金 無料</li>
+              <li>荷重分散ピアノボード</li>
+            </ul>
+          </div>
+        </div>
+        <div class="rank-card take fade-in-up">
+          <div class="rank-card-header"><div class="rank-icon-img">竹</div><h3>演奏を快適に</h3></div>
+          <div class="rank-price-condition">税別 25万円以上</div>
+          <div class="rank-body">
+            <ul class="rank-items-list">
+              <li>ピアノ椅子</li>
+              <li>吉澤ギフト券 1万円分</li>
+            </ul>
+          </div>
+        </div>
+        <div class="rank-card ume fade-in-up">
+          <div class="rank-card-header"><div class="rank-icon-img">梅</div><h3>レッスンの友</h3></div>
+          <div class="rank-price-condition">税別 20万円以上</div>
+          <div class="rank-body">
+            <ul class="rank-items-list">
+              <li>メトロノーム</li>
+              <li>吉澤ギフト券 5千円分</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WISDOM LIBRARY (RESTORED COMPLETELY) -->
+  <section id="wisdom-library" class="section wisdom-library-area">
+      <div class="container">
+          <div class="fade-in-up text-center wisdom-header">
+              <span class="section-label">KNOWLEDGE</span>
+              <h2 class="section-title">迷わず選べるように、<br>130年の知恵を贈ります。</h2>
+              <p class="section-desc">ピアノ選びの不安は、正しい知識で「希望」に変わります。<br>私たちが培ってきたノウハウをすべて公開いたしました。</p>
+          </div>
+
+          <div class="wisdom-grid fade-in-up">
+              <div class="wisdom-card">
+                  <div class="wisdom-tag">其の一</div>
+                  <h4>ピアノ選び、その先へ</h4>
+                  <p>電子とアコースティック、その本当の違いを解説。</p>
+              </div>
+              <div class="wisdom-card">
+                  <div class="wisdom-tag">其の二</div>
+                  <h4>置き場所の"正解"</h4>
+                  <p>プロが教える、ピアノに最適な室内環境と配置のコツ。</p>
+              </div>
+              <div class="wisdom-card">
+                  <div class="wisdom-tag">其の三</div>
+                  <h4>本体以外にかかる費用</h4>
+                  <p>運搬や調律など、購入前に知っておきたい予算の全て。</p>
+              </div>
+              <div class="wisdom-card">
+                  <div class="wisdom-tag">其の四</div>
+                  <h4>正しい姿勢マスター</h4>
+                  <p>一生モノの演奏技術を育む、美しい姿勢の第一歩。</p>
+              </div>
+              <div class="wisdom-card">
+                  <div class="wisdom-tag">其の五</div>
+                  <h4>失敗談から学ぶ成功法則</h4>
+                  <p>多くの人が陥る「罠」を知り、最高の1台を選ぶ道筋。</p>
+              </div>
+              <div class="wisdom-card">
+                  <div class="wisdom-tag">其の六</div>
+                  <h4>用意する時の4つの急所</h4>
+                  <p>搬入から設置後のケアまで、プロのチェックポイント。</p>
+              </div>
+          </div>
+
+          <div class="line-invite-container fade-in-up">
+              <div class="line-invite-inner">
+                  <div class="line-invite-label">限定・無料公開中</div>
+                  <h3 class="line-invite-title">LINE友だち登録で<br><span>「6大デジタルガイド」</span>をプレゼント</h3>
+                  <div class="line-btn-wrapper">
+                      <a href="https://lin.ee/Hm79p0k" class="ultimate-line-btn">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="LINE" class="line-logo-svg">
+                          <span class="btn-main-text">無料でガイドを受け取る</span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- PIANO LIST (全16台復元) -->
+  <section class="detail-list fade-in-up">
+    <div class="container">
+      <h2 class="section-title text-center">詳細ピアノ・リスト</h2>
+      <div class="tabs">
+        <div class="tab active" data-tab="upright">アップライトピアノ</div>
+        <div class="tab" data-tab="grand">グランドピアノ</div>
+      </div>
+
+      <div class="tab-content active" id="upright">
+        <div style="overflow-x: auto;">
+          <table class="piano-table">
+            <thead>
+              <tr><th>メーカー</th><th>品番</th><th>販売価格（税込）</th><th>機能・他</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>エテルナ</td><td>E2D</td><td>￥220,000</td><td></td></tr>
+              <tr><td>ヤマハ</td><td><a href="https://www.toriimusic.co.jp/18164/" target="_blank">No.U1</a></td><td>￥264,000</td><td></td></tr>
+              <tr><td>ヤマハ</td><td><a href="https://www.toriimusic.co.jp/17206/" target="_blank">U1H</a></td><td>￥308,000</td><td></td></tr>
+              <tr><td>ヤマハ</td><td><a href="https://www.toriimusic.co.jp/16526/" target="_blank">U1H</a></td><td>￥319,000</td><td><span class="stock-badge bg-red">仮掲載</span></td></tr>
+              <tr><td>ヤマハ</td><td><a href="https://www.toriimusic.co.jp/14191/" target="_blank">U2H</a></td><td>￥330,000</td><td></td></tr>
+              <tr><td>ヤマハ</td><td><a href="https://www.toriimusic.co.jp/20528/" target="_blank">U3H</a></td><td>￥330,000</td><td><span class="stock-badge bg-red">仮掲載</span></td></tr>
+              <tr><td>ヤマハ</td><td><a href="https://www.toriimusic.co.jp/10937/" target="_blank">U3M</a></td><td>￥385,000</td><td><span class="stock-badge bg-red">仮掲載</span></td></tr>
+              <tr><td>ヤマハ</td><td><a href="https://www.toriimusic.co.jp/21546/" target="_blank">U3A</a></td><td>￥396,000</td><td></td></tr>
+              <tr><td>ヤマハ</td><td><a href="https://www.toriimusic.co.jp/25885/" target="_blank">U10A</a></td><td>￥429,500</td><td></td></tr>
+              <tr><td>ヤマハ</td><td><a href="https://www.toriimusic.co.jp/12541/" target="_blank">YUS</a></td><td>￥429,000</td><td></td></tr>
+              <tr><td>ヤマハ</td><td><a href="https://www.toriimusic.co.jp/15438" target="_blank">U10A</a></td><td>￥440,000</td><td></td></tr>
+              <tr><td>ヤマハ</td><td><a href="https://www.toriimusic.co.jp/19544/" target="_blank">UX1</a></td><td>￥451,000</td><td><span class="stock-badge bg-gold">X支柱</span></td></tr>
+              <tr><td>ヤマハ</td><td><a href="https://www.toriimusic.co.jp/20949/" target="_blank">UX2</a></td><td>￥462,000</td><td><span class="stock-badge bg-gold">X支柱</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="tab-content" id="grand">
+        <table class="piano-table">
+          <thead><tr><th>メーカー</th><th>品番</th><th>価格(税込)</th></tr></thead>
+          <tbody>
+            <tr><td>ヤマハ</td><td><a href="https://kens-pro.github.io/G2E/" target="_blank">G2E</a></td><td>￥935,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAFF -->
+  <section class="staff-section fade-in-up">
+    <div class="container">
+      <div class="text-center"><h2 class="section-title">私たちがお迎えします</h2></div>
+      <div class="staff-grid">
+        <div class="staff-card"><img src="image/001.jpg" alt="鳥居" class="staff-img"><h3 class="staff-name">鳥居 保典</h3><p class="staff-msg">最良の一台をお届けすることを使命としています。</p></div>
+        <div class="staff-card"><img src="image/IMG_8005.jpg" alt="大田" class="staff-img"><h3 class="staff-name">大田 英史</h3><p class="staff-msg">最高の音色を引き出します。</p></div>
+        <div class="staff-card"><img src="image/IMG_8049.jpg" alt="吉田" class="staff-img"><h3 class="staff-name">吉田 健一</h3><p class="staff-msg">ライフスタイルに合わせた一台を。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCESS -->
+  <section class="access" id="access">
+    <div class="container access-grid fade-in-up">
+      <div class="access-info">
+        <h2 class="section-title">会場・会社概要</h2>
+        <p><strong>株式会社トリイ 今津本店</strong><br>滋賀県高島市今津町名小路1-1<br>電話：0740-22-2063</p>
+      </div>
+      <div class="access-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1626.122681422018!2d136.03035953889182!3d35.39916827953692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001923b40d91723%3A0x7b8e690e53892f64!2z44CSNTIwLTE2MzEg5ruL6LOA55yM6auY5bO25biC5LuK5rSl55S65ZCN5bCP6Lev77yR5LiB55uu77yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1764224097136!5m2!1sja!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="padding:100px 0; text-align:center;">
+    <div class="container fade-in-up">
+      <h2 class="section-title">ご来場予約</h2>
+      <a href="https://www.toriimusic.co.jp/25682/" style="display:inline-block; background:var(--c-red); color:white; padding:18px 70px; border-radius:50px; font-weight:700;">予約フォームへ</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container"><p>&copy; 2026 株式会社トリイ. All Rights Reserved.</p></div>
+  </footer>
+
+  <!-- STICKY BAR -->
+  <div class="sticky-bar">
+    <a href="tel:0740222063" class="sticky-item">電話</a>
+    <a href="https://www.toriimusic.co.jp/25682/" class="sticky-cta">来場予約する</a>
+    <a href="https://lin.ee/Hm79p0k" class="sticky-item">LINE</a>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabs = document.querySelectorAll('.tab');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+          document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+          tab.classList.add('active');
+          document.getElementById(tab.dataset.tab).classList.add('active');
+        });
+      });
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add('is-visible');
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
+      
+      const header = document.querySelector('.header');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+      });
+    });
+  </script>
+</body>
+</html>
