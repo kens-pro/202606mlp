@@ -109,7 +109,8 @@
     /* === HERO CAROUSEL === */
     .hero {
       height: 100vh; min-height: 700px; position: relative; overflow: hidden;
-      display: flex; align-items: center; justify-content: center;
+      display: flex; align-items: flex-start; justify-content: center;
+      padding-top: 100px;
     }
     .hero-carousel { position: absolute; inset: 0; z-index: 0; }
     .hero-slide {
@@ -474,7 +475,8 @@
 
     /* RESPONSIVE */
     @media (max-width: 900px) {
-      .hero-copy-vertical { writing-mode: horizontal-tb; height: auto; margin-top: -50px; }
+      .hero { align-items: flex-start; padding-top: 80px; }
+      .hero-copy-vertical { writing-mode: horizontal-tb; height: auto; margin-top: 0; }
       .concept-inner, .sho-chiku-bai, .staff-grid, .reasons-grid, .access-grid, .wisdom-grid { grid-template-columns: 1fr; gap: 40px; }
       .piano-table { font-size: 0.8rem; }
     }
